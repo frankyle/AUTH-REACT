@@ -2,9 +2,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LoginPage from './pages/Login';
-import ProfilePage from './pages/ProfilePage';
-import MgiCandlesPage from './pages/MgiCandlesPage';
 import Register from './pages/Register';
+// import MgiStrategy from './pages/MgiCandles/MgiStategy';
+import ProfileTable from './pages/Profile/ProfileTable';
 
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
       <Routes>
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/profile" element={<ProfilePage />} />
-        <Route path="/mgicandles" element={<MgiCandlesPage />} />
+        <Route path="/profile" element={<ProfileTable />} />
+        {/* <Route path="/mgicandles" element={<MgiStrategy />} /> */}
       </Routes>
     </Router>
   );
